@@ -8,19 +8,22 @@ var scores = [0, 0];
 var roundScore = 0;
 
 // Shoonii ali talaar buusniig hadgalah huivsagch, 1-6 gesen utgiig ene huivsagchid randomoor uusgej ugnu
-var dice = Math.floor(Math.random() * 6) + 1;
-
-// <div class="player-score" id="score-0">43</div>
-// document.querySelector("#score-0").textContent = dice;
-// document.querySelector("#score-1").innerHTML = "<em>HEHE</em>";
+// var diceNumber = Math.floor(Math.random() * 6) + 1;
 
 // Programm ehlehed beltgey
-document.querySelector("#score-0").textContent = 0;
-document.querySelector("#score-1").textContent = 0;
+document.getElementById("score-0").textContent = "0";
+document.getElementById("score-1").textContent = "0";
+document.getElementById("current-0").textContent = "0";
+document.getElementById("current-1").textContent = "0";
 
-document.querySelector("#current-0").textContent = 0;
-document.querySelector("#current-1").textContent = 0;
+var diceDOM = document.querySelector(".dice");
+diceDOM.style.display = "none";
 
-document.querySelector(".dice").style.display = "none";
+//                                                         Anonymous Function
+document.querySelector(".btn-roll").addEventListener("click", function () {
+  var diceNumber = Math.floor(Math.random() * 6) + 1;
 
-console.log("Shoo : " + dice);
+  // Dice iin zurag solih
+  diceDOM.style.display = "block™";
+  diceDOM.src = "./img/dice-" + diceNumber + ".png";
+});
