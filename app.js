@@ -43,7 +43,7 @@ function initGame() {
   diceDom.style.display = "none";
 }
 
-// Shoo shideh eventlistener
+// Shoo shideh eventlistener1
 document.querySelector(".btn-roll").addEventListener("click", function () {
   // if (isNewGame === true)
   if (isNewGame) {
