@@ -2,7 +2,7 @@
 var activePlayer, scores, roundScore, isNewGame;
 
 // Shoonii zurgiin uzuuleh element iig DOM oos haij olood ened hadgalah
-var diceDom = document.querySelector(".dice");
+var diceDom = document.querySelector(".dice-1");
 
 // Togloomiig ehluuleh
 initGame();
